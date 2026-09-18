@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  gridwise-api:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    container_name: gridwise-api
+    ports:
+      - "8000:8000"
+    restart: always
