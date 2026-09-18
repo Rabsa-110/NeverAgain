@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gridwise-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./deployment/Dockerfile
+    dockerContext: .
+    envVars:
+      - key: PORT
+        value: 8000
